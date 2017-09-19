@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">OekakiWork</string>
+    <string name="toast_send_ok">送信完了</string>
+    <string name="toast_sync_ok">更新完了</string>
+    <string name="toast_download_ok">ダウンロード完了</string>
+    <string name="toast_download_no">ダウンロード失敗</string>
+    <string name="dialog_title_ftp">通信中</string>
+    <string name="dialog_message_send">データをサーバーにアップロード中です。</string>
+    <string name="dialog_message_list_sync">リストを更新中です。</string>
+    <string name="dialog_message_get">データをダウンロード中です。</string>
+</resources>
