@@ -235,26 +235,25 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
      */
 
     private void remoteDrawLine(int category, String fontColor, int fontSize, JSONArray pathArray) {
-        Paint mPaintRemote = null;
         //ツールの切り替え
         switch (category) {
             case TOOL_ERASER:
-                mPaintRemote = new Paint();
-                mPaintRemote.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
-                mPaintRemote.setARGB(0, 0, 0, 0);
-                mPaintRemote.setAntiAlias(true);
-                mPaintRemote.setStrokeWidth(fontSize);
-                mPaintRemote.setStyle(Paint.Style.STROKE);
-                mPaintRemote.setStrokeCap(Paint.Cap.ROUND);
+                mPaint = new Paint();
+                mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
+                mPaint.setARGB(0, 0, 0, 0);
+                mPaint.setAntiAlias(true);
+                mPaint.setStrokeWidth(fontSize);
+                mPaint.setStyle(Paint.Style.STROKE);
+                mPaint.setStrokeCap(Paint.Cap.ROUND);
                 break;
 
             case TOOL_PEN:
-                mPaintRemote = new Paint();
-                mPaintRemote.setAntiAlias(true);
-                mPaintRemote.setColor(Color.parseColor(fontColor));
-                mPaintRemote.setStrokeWidth(fontSize);
-                mPaintRemote.setStyle(Paint.Style.STROKE);
-                mPaintRemote.setStrokeCap(Paint.Cap.ROUND);
+                mPaint = new Paint();
+                mPaint.setAntiAlias(true);
+                mPaint.setColor(Color.parseColor(fontColor));
+                mPaint.setStrokeWidth(fontSize);
+                mPaint.setStyle(Paint.Style.STROKE);
+                mPaint.setStrokeCap(Paint.Cap.ROUND);
                 break;
         }
 
@@ -278,7 +277,7 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
         }
         //線の描画
         drawLine(path);
-        mLastDrawCanvas.drawPath(path, mPaintRemote);
+        mLastDrawCanvas.drawPath(path, mPaint);
     }
 
     /**
