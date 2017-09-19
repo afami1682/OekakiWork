@@ -229,32 +229,32 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
     /**
      * サーバの描画データをCanvasへ描き込む
      *
-     * @param color
+     * @param fontColor
      * @param fontSize
      * @param pathArray
      */
 
-    private void remoteDrawLine(int category, String color, int fontSize, JSONArray pathArray) {
-
+    private void remoteDrawLine(int category, String fontColor, int fontSize, JSONArray pathArray) {
+        Paint mPaintRemote = null;
         //ツールの切り替え
         switch (category) {
             case TOOL_ERASER:
-                mPaint = new Paint();
-                mPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
-                mPaint.setARGB(0, 0, 0, 0);
-                mPaint.setAntiAlias(true);
-                mPaint.setStrokeWidth(fontSize);
-                mPaint.setStyle(Paint.Style.STROKE);
-                mPaint.setStrokeCap(Paint.Cap.ROUND);
+                mPaintRemote = new Paint();
+                mPaintRemote.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
+                mPaintRemote.setARGB(0, 0, 0, 0);
+                mPaintRemote.setAntiAlias(true);
+                mPaintRemote.setStrokeWidth(fontSize);
+                mPaintRemote.setStyle(Paint.Style.STROKE);
+                mPaintRemote.setStrokeCap(Paint.Cap.ROUND);
                 break;
 
             case TOOL_PEN:
-                mPaint = new Paint();
-                mPaint.setAntiAlias(true);
-                mPaint.setColor(Color.parseColor(color));
-                mPaint.setStrokeWidth(fontSize);
-                mPaint.setStyle(Paint.Style.STROKE);
-                mPaint.setStrokeCap(Paint.Cap.ROUND);
+                mPaintRemote = new Paint();
+                mPaintRemote.setAntiAlias(true);
+                mPaintRemote.setColor(Color.parseColor(fontColor));
+                mPaintRemote.setStrokeWidth(fontSize);
+                mPaintRemote.setStyle(Paint.Style.STROKE);
+                mPaintRemote.setStrokeCap(Paint.Cap.ROUND);
                 break;
         }
 
@@ -278,7 +278,7 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
         }
         //線の描画
         drawLine(path);
-        mLastDrawCanvas.drawPath(path, mPaint);
+        mLastDrawCanvas.drawPath(path, mPaintRemote);
     }
 
     /**
