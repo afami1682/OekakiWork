@@ -54,8 +54,8 @@
       <file leaf-file-name="DrawSurfaceView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/DrawSurfaceView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="279" column="45" selection-start-line="279" selection-start-column="45" selection-end-line="279" selection-end-column="45" />
+            <state relative-caret-position="285">
+              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
               <folding>
                 <element signature="method#setFontSize#0;class#DrawData#0" expanded="true" />
                 <element signature="method#getFontSize#0;class#DrawData#0" expanded="true" />
@@ -2416,8 +2416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/DrawSurfaceView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="279" column="45" selection-start-line="279" selection-start-column="45" selection-end-line="279" selection-end-column="45" />
+        <state relative-caret-position="285">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding>
             <element signature="method#setFontSize#0;class#DrawData#0" expanded="true" />
             <element signature="method#getFontSize#0;class#DrawData#0" expanded="true" />

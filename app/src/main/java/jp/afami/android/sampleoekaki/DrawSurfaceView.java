@@ -126,6 +126,10 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
+
+                mPaint.setStrokeWidth(mFontSize);
+                mPaint.setColor(Color.parseColor(mFontColor));
+
                 mPath = new Path();
                 mPath.moveTo(event.getX(), event.getY());
 
