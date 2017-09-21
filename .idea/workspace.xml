@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f8212650-631e-4494-8726-5a423e94ef42" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/DrawSurfaceView.java" afterPath="$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/DrawSurfaceView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/Utils.java" />
     </list>
     <ignored path="OekakiWork.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,24 +60,27 @@
       <file leaf-file-name="DrawSurfaceView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/DrawSurfaceView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+            <state relative-caret-position="1275">
+              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="method#setFontSize#0;class#DrawData#0" expanded="true" />
                 <element signature="method#getFontSize#0;class#DrawData#0" expanded="true" />
                 <element signature="method#setFontColor#0;class#DrawData#0" expanded="true" />
                 <element signature="method#getFontColor#0;class#DrawData#0" expanded="true" />
+                <element signature="method#getPathList#0;class#DrawData#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiProductManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/api/ApiProductManager.java">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="575">
+              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1948,13 +1957,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/Utils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/DrawSurfaceView.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="44" />
+    <option name="y" value="48" />
+    <option name="width" value="1093" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2095,16 +2107,15 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="device.picker.selection" value="Nexus_5X_API_24" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -2315,29 +2326,38 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="44" y="48" width="1093" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3320647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2361,11 +2381,164 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/OekakiActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/DrawSurfaceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#setFontSize#0;class#DrawData#0" expanded="true" />
+            <element signature="method#getFontSize#0;class#DrawData#0" expanded="true" />
+            <element signature="method#setFontColor#0;class#DrawData#0" expanded="true" />
+            <element signature="method#getFontColor#0;class#DrawData#0" expanded="true" />
+            <element signature="method#getPathList#0;class#DrawData#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-24/android/graphics/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20010">
+          <caret line="1334" column="98" selection-start-line="1334" selection-start-column="98" selection-end-line="1334" selection-end-column="98" />
+          <folding>
+            <element signature="method#getNativeCanvasWrapper#0;class#Canvas#0" expanded="true" />
+            <element signature="method#getDensity#0;class#Canvas#0" expanded="true" />
+            <element signature="method#setScreenDensity#0;class#Canvas#0" expanded="true" />
+            <element signature="method#getMaximumBitmapWidth#0;class#Canvas#0" expanded="true" />
+            <element signature="method#getMaximumBitmapHeight#0;class#Canvas#0" expanded="true" />
+            <element signature="method#getDrawFilter#0;class#Canvas#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-24/android/graphics/Bitmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16125">
+          <caret line="1118" column="0" selection-start-line="1118" selection-start-column="0" selection-end-line="1118" selection-end-column="0" />
+          <folding>
+            <element signature="method#isRecycled#0;class#Bitmap#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-24/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175650">
+          <caret line="11710" column="0" selection-start-line="11710" selection-start-column="0" selection-end-line="11710" selection-end-column="0" />
+          <folding>
+            <element signature="method#getVerticalScrollbarPosition#0;class#View#0" expanded="true" />
+            <element signature="method#setOnScrollChangeListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnFocusChangeListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnKeyListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnTouchListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnGenericMotionListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnHoverListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnDragListener#0;class#View#0" expanded="true" />
+            <element signature="method#getAccessibilityDelegate#0;class#View#0" expanded="true" />
+            <element signature="method#setAccessibilityDelegate#0;class#View#0" expanded="true" />
+            <element signature="method#getContentDescription#0;class#View#0" expanded="true" />
+            <element signature="method#getAccessibilityTraversalBefore#0;class#View#0" expanded="true" />
+            <element signature="method#getAccessibilityTraversalAfter#0;class#View#0" expanded="true" />
+            <element signature="method#getLabelFor#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusLeftId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusLeftId#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusRightId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusRightId#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusUpId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusUpId#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusDownId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusDownId#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusForwardId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusForwardId#0;class#View#0" expanded="true" />
+            <element signature="method#setOnApplyWindowInsetsListener#0;class#View#0" expanded="true" />
+            <element signature="method#getAccessibilitySelectionStart#0;class#View#0" expanded="true" />
+            <element signature="method#getContext#0;class#View#0" expanded="true" />
+            <element signature="method#setTouchDelegate#0;class#View#0" expanded="true" />
+            <element signature="method#getTouchDelegate#0;class#View#0" expanded="true" />
+            <element signature="method#getParent#0;class#View#0" expanded="true" />
+            <element signature="method#getScrollX#0;class#View#0" expanded="true" />
+            <element signature="method#getScrollY#0;class#View#0" expanded="true" />
+            <element signature="method#getMeasuredWidthAndState#0;class#View#0" expanded="true" />
+            <element signature="method#getMeasuredHeightAndState#0;class#View#0" expanded="true" />
+            <element signature="method#getTop#0;class#View#0" expanded="true" />
+            <element signature="method#getBottom#0;class#View#0" expanded="true" />
+            <element signature="method#getLeft#0;class#View#0" expanded="true" />
+            <element signature="method#getRight#0;class#View#0" expanded="true" />
+            <element signature="method#getStateListAnimator#0;class#View#0" expanded="true" />
+            <element signature="method#getOutlineProvider#0;class#View#0" expanded="true" />
+            <element signature="method#getLayoutParams#0;class#View#0" expanded="true" />
+            <element signature="method#setScrollBarDefaultDelayBeforeFade#0;class#View#0" expanded="true" />
+            <element signature="method#setScrollBarFadeDuration#0;class#View#0" expanded="true" />
+            <element signature="method#setScrollBarSize#0;class#View#0" expanded="true" />
+            <element signature="method#getWindowAttachCount#0;class#View#0" expanded="true" />
+            <element signature="method#getLayerType#0;class#View#0" expanded="true" />
+            <element signature="method#getDrawingCacheBackgroundColor#0;class#View#0" expanded="true" />
+            <element signature="method#getResources#0;class#View#0" expanded="true" />
+            <element signature="method#getBackground#0;class#View#0" expanded="true" />
+            <element signature="method#getPaddingTop#0;class#View#0" expanded="true" />
+            <element signature="method#getPaddingBottom#0;class#View#0" expanded="true" />
+            <element signature="method#setOpticalInsets#0;class#View#0" expanded="true" />
+            <element signature="method#getId#0;class#View#0" expanded="true" />
+            <element signature="method#getTag#0;class#View#0" expanded="true" />
+            <element signature="method#setTag#0;class#View#0" expanded="true" />
+            <element signature="method#getMinimumHeight#0;class#View#0" expanded="true" />
+            <element signature="method#getMinimumWidth#0;class#View#0" expanded="true" />
+            <element signature="method#getAnimation#0;class#View#0" expanded="true" />
+            <element signature="method#getSystemUiVisibility#0;class#View#0" expanded="true" />
+            <element signature="method#getOverScrollMode#0;class#View#0" expanded="true" />
+            <element signature="method#getPointerIcon#0;class#View#0" expanded="true" />
+            <element signature="method#setTransitionName#0;class#View#0" expanded="true" />
+            <element signature="method#getTransitionName#0;class#View#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/api/ApiProductManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/api/ApiDrawingConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -2398,14 +2571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/api/ApiProductManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/api/ApiDrawingConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -2414,15 +2579,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-24/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173805">
+          <caret line="11710" column="0" selection-start-line="11710" selection-start-column="0" selection-end-line="11710" selection-end-column="0" />
+          <folding>
+            <element signature="method#getVerticalScrollbarPosition#0;class#View#0" expanded="true" />
+            <element signature="method#setOnScrollChangeListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnFocusChangeListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnKeyListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnTouchListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnGenericMotionListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnHoverListener#0;class#View#0" expanded="true" />
+            <element signature="method#setOnDragListener#0;class#View#0" expanded="true" />
+            <element signature="method#getAccessibilityDelegate#0;class#View#0" expanded="true" />
+            <element signature="method#setAccessibilityDelegate#0;class#View#0" expanded="true" />
+            <element signature="method#getContentDescription#0;class#View#0" expanded="true" />
+            <element signature="method#getAccessibilityTraversalBefore#0;class#View#0" expanded="true" />
+            <element signature="method#getAccessibilityTraversalAfter#0;class#View#0" expanded="true" />
+            <element signature="method#getLabelFor#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusLeftId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusLeftId#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusRightId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusRightId#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusUpId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusUpId#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusDownId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusDownId#0;class#View#0" expanded="true" />
+            <element signature="method#getNextFocusForwardId#0;class#View#0" expanded="true" />
+            <element signature="method#setNextFocusForwardId#0;class#View#0" expanded="true" />
+            <element signature="method#setOnApplyWindowInsetsListener#0;class#View#0" expanded="true" />
+            <element signature="method#getAccessibilitySelectionStart#0;class#View#0" expanded="true" />
+            <element signature="method#getContext#0;class#View#0" expanded="true" />
+            <element signature="method#setTouchDelegate#0;class#View#0" expanded="true" />
+            <element signature="method#getTouchDelegate#0;class#View#0" expanded="true" />
+            <element signature="method#getParent#0;class#View#0" expanded="true" />
+            <element signature="method#getScrollX#0;class#View#0" expanded="true" />
+            <element signature="method#getScrollY#0;class#View#0" expanded="true" />
+            <element signature="method#getMeasuredWidthAndState#0;class#View#0" expanded="true" />
+            <element signature="method#getMeasuredHeightAndState#0;class#View#0" expanded="true" />
+            <element signature="method#getTop#0;class#View#0" expanded="true" />
+            <element signature="method#getBottom#0;class#View#0" expanded="true" />
+            <element signature="method#getLeft#0;class#View#0" expanded="true" />
+            <element signature="method#getRight#0;class#View#0" expanded="true" />
+            <element signature="method#getStateListAnimator#0;class#View#0" expanded="true" />
+            <element signature="method#getOutlineProvider#0;class#View#0" expanded="true" />
+            <element signature="method#getLayoutParams#0;class#View#0" expanded="true" />
+            <element signature="method#setScrollBarDefaultDelayBeforeFade#0;class#View#0" expanded="true" />
+            <element signature="method#setScrollBarFadeDuration#0;class#View#0" expanded="true" />
+            <element signature="method#setScrollBarSize#0;class#View#0" expanded="true" />
+            <element signature="method#getWindowAttachCount#0;class#View#0" expanded="true" />
+            <element signature="method#getLayerType#0;class#View#0" expanded="true" />
+            <element signature="method#getDrawingCacheBackgroundColor#0;class#View#0" expanded="true" />
+            <element signature="method#getResources#0;class#View#0" expanded="true" />
+            <element signature="method#getBackground#0;class#View#0" expanded="true" />
+            <element signature="method#getPaddingTop#0;class#View#0" expanded="true" />
+            <element signature="method#getPaddingBottom#0;class#View#0" expanded="true" />
+            <element signature="method#setOpticalInsets#0;class#View#0" expanded="true" />
+            <element signature="method#getId#0;class#View#0" expanded="true" />
+            <element signature="method#getTag#0;class#View#0" expanded="true" />
+            <element signature="method#setTag#0;class#View#0" expanded="true" />
+            <element signature="method#getMinimumHeight#0;class#View#0" expanded="true" />
+            <element signature="method#getMinimumWidth#0;class#View#0" expanded="true" />
+            <element signature="method#getAnimation#0;class#View#0" expanded="true" />
+            <element signature="method#getSystemUiVisibility#0;class#View#0" expanded="true" />
+            <element signature="method#getOverScrollMode#0;class#View#0" expanded="true" />
+            <element signature="method#getPointerIcon#0;class#View#0" expanded="true" />
+            <element signature="method#setTransitionName#0;class#View#0" expanded="true" />
+            <element signature="method#getTransitionName#0;class#View#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-24/android/graphics/Bitmap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16125">
+          <caret line="1118" column="0" selection-start-line="1118" selection-start-column="0" selection-end-line="1118" selection-end-column="0" />
+          <folding>
+            <element signature="method#isRecycled#0;class#Bitmap#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-24/android/graphics/Canvas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19575">
+          <caret line="1334" column="98" selection-start-line="1334" selection-start-column="98" selection-end-line="1334" selection-end-column="98" />
+          <folding>
+            <element signature="method#getNativeCanvasWrapper#0;class#Canvas#0" expanded="true" />
+            <element signature="method#getDensity#0;class#Canvas#0" expanded="true" />
+            <element signature="method#setScreenDensity#0;class#Canvas#0" expanded="true" />
+            <element signature="method#getMaximumBitmapWidth#0;class#Canvas#0" expanded="true" />
+            <element signature="method#getMaximumBitmapHeight#0;class#Canvas#0" expanded="true" />
+            <element signature="method#getDrawFilter#0;class#Canvas#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/api/ApiProductManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/jp/afami/android/sampleoekaki/DrawSurfaceView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+        <state relative-caret-position="1275">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
             <element signature="method#setFontSize#0;class#DrawData#0" expanded="true" />
             <element signature="method#getFontSize#0;class#DrawData#0" expanded="true" />
             <element signature="method#setFontColor#0;class#DrawData#0" expanded="true" />
             <element signature="method#getFontColor#0;class#DrawData#0" expanded="true" />
+            <element signature="method#getPathList#0;class#DrawData#0" expanded="true" />
           </folding>
         </state>
       </provider>

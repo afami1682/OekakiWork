@@ -34,6 +34,9 @@ import java.util.List;
 
 public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callback {
 
+    final float VIEW_WIDTH = 400;
+    final float VIEW_HEIGHT = 600;
+
     // 定数
     private static final String TAG = "DrawSurfaceView";
     public static final int TOOL_ERASER = 0; //消しゴム
@@ -53,6 +56,8 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
 
     // 送信用描画データ
     DrawData mDrawData = null;
+
+    float scale;
 
     private Context parent;
 
@@ -95,6 +100,15 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
+
+
+        float scaleX = getWidth() / VIEW_WIDTH;
+        float scaleY = getHeight() / VIEW_HEIGHT;
+        scale = scaleX > scaleY ? scaleY : scaleX;
+
+        Log.i("surfaceCreated", "scaleX:" + scaleX);
+        Log.i("surfaceCreated", "scaleY:" + scaleY);
+
         // 描画状態を保持するBitmapを生成します。
         clearLastDrawBitmap();
     }
@@ -124,14 +138,21 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        float touchedX = event.getX() / scale;
+        float touchedY = event.getY() / scale;
+
+        Log.i("onTouchEvent", "touxhedX:" + touchedX);
+        Log.i("onTouchEvent", "touxhedY:" + touchedY);
+
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
 
+                // フォントサイズとカラーの設定
                 mPaint.setStrokeWidth(mFontSize);
                 mPaint.setColor(Color.parseColor(mFontColor));
 
                 mPath = new Path();
-                mPath.moveTo(event.getX(), event.getY());
+                mPath.moveTo(touchedX, touchedY);
 
                 // 受け渡し用
                 mDrawData = new DrawData();
@@ -140,12 +161,12 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
                 break;
 
             case MotionEvent.ACTION_MOVE:
-                mPath.lineTo(event.getX(), event.getY());
+                mPath.lineTo(touchedX, touchedY);
                 drawLine(mPath);
                 break;
 
             case MotionEvent.ACTION_UP:
-                mPath.lineTo(event.getX(), event.getY());
+                mPath.lineTo(touchedX, touchedY);
                 drawLine(mPath);
 
                 mLastDrawCanvas.drawPath(mPath, mPaint);
@@ -158,7 +179,7 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
                 break;
         }
         // 受け渡し用
-        mDrawData.setPath(event.getX(), event.getY());
+        mDrawData.setPath(touchedX, touchedY);
         return true;
     }
 
@@ -292,6 +313,9 @@ public class DrawSurfaceView extends SurfaceView implements SurfaceHolder.Callba
     private void drawLine(Path path) {
         // ロックしてキャンバスを取得します。
         mCanvas = mHolder.lockCanvas();
+
+        //比率に応じてキャンパスサイズを指定
+        mCanvas.scale(scale, scale);
 
         // キャンバスをクリアします。
         mCanvas.drawColor(0, PorterDuff.Mode.CLEAR);
